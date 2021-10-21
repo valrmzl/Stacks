@@ -11,7 +11,8 @@ typedef struct STRSTACK STACK;
 
 STACK *newStack();
 void push(STACK* stack, void *value);
-void pop(STACK* stack);
+void otherPush(STACK *stack, void *value);
+void *pop(STACK* stack);
 void *peek(STACK* stack);
 
 void printStackOfIntegers(STACK*stack);

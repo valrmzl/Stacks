@@ -21,15 +21,18 @@ STACK *newStack()
 {
     STACK *newStack=malloc(sizeof(STACK));
     newStack->size=0;
-    newStack->top->prior=NULL;
+    //se le debe de asignar algo al top
+    newStack->top=NULL;
     return newStack;
 }
 
 void push(STACK* stack, void *value)
 {
     if(stack->size==0){
-        stack->top->data=value;
-        stack->top->prior=NULL;
+        NODE *newElement= malloc(sizeof(NODE));
+        newElement->data=value;
+        stack->top=newElement;
+
     }
     else{
         NODE *newElement=malloc(sizeof(NODE));
@@ -39,8 +42,15 @@ void push(STACK* stack, void *value)
     }
     (stack->size)++;
 }
-
-void pop(STACK* stack)
+void otherPush(STACK *stack, void *value)
+{
+    NODE *nuevoNodo = malloc(sizeof(NODE));
+    nuevoNodo->data = value;
+    nuevoNodo->prior = stack->top;
+    stack->top = nuevoNodo;
+    stack->size++;
+}
+void *pop(STACK* stack)
 {
     if(stack->size==0){
         printf("El stack ya esta vacio.\n");
@@ -48,9 +58,13 @@ void pop(STACK* stack)
     else{
         NODE *elementDelete =stack->top;
         stack->top=stack->top->prior;
+        //tenemos que rescatar el nodo antes de liberarlo
+        void *dataToReturn=elementDelete->data;
         free(elementDelete);
         (stack->size)--;
+        return dataToReturn;
     }
+    return NULL;
 
 }
 
