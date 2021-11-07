@@ -2,8 +2,8 @@
 // Created by luax2 on 19/10/2021.
 //
 #include "st.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 struct STRNODE
 {
@@ -74,6 +74,8 @@ void *peek(STACK* stack)
         return NULL;
     }
     else{
+        int *p=stack->top->data;
+        //printf("El peek es: %d\n",*p);
         return stack->top->data;
     }
 }
@@ -91,4 +93,74 @@ void printStackOfIntegers(STACK*stack){
             element=element->prior;
         }
     }
+    printf("\n");
 }
+
+void invertirStack(STACK *s)
+{
+    if(s->size==0 || s->size==1)
+        return;
+    else{
+        NODE *siguiente=NULL;
+        NODE *actual=s->top;
+        NODE *anterior=s->top->prior;
+
+        while(actual!=NULL){
+            //es el swap
+            actual->prior=siguiente;
+            siguiente=actual;
+            actual=anterior;
+            if(actual!=NULL)
+                anterior=actual->prior;
+            else
+                anterior=NULL;
+        }
+        s->top=siguiente;
+    }
+}
+
+int compare(void *a,void*b)
+{
+    int *A=(int *)a;
+    int *B=(int *)b;
+    if(*A==0)
+        return 0;
+    if(*A<*B)
+        return -1;
+    if(*A>*B)
+        return 1;
+    return 0;
+}
+
+
+void sortStack(STACK *s, int(*compare)(void *a, void *b))
+{
+    STACK *mayor=newStack();
+    STACK *helper=newStack();
+    STACK *ordenado=newStack();
+    while(peek(s)!=NULL)
+    {
+        push(mayor,pop(s));
+        while(peek(s)!=NULL){
+            if(compare(peek(s),peek(mayor))>0)
+            {
+                push(helper,pop(mayor));
+                push(mayor,pop(s));
+            }else{
+                push(helper,pop(s));
+            }
+        }
+        //s quedo vacia y todo esta en helper menos el menor
+        while(peek(helper)!=NULL){
+            push(s,pop(helper));
+        }
+        push(ordenado,pop(mayor));
+    }
+    *s=*ordenado;
+}
+
+
+
+
+
+

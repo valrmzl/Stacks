@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/main.c" "C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/cmake-build-debug/CMakeFiles/FuncionesStack.dir/main.c.obj"
+  "C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/st.c" "C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/cmake-build-debug/CMakeFiles/FuncionesStack.dir/st.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

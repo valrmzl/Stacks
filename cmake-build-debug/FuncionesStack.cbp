@@ -85,6 +85,12 @@
 		<Unit filename="C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/main.c">
 			<Option target="FuncionesStack"/>
 		</Unit>
+		<Unit filename="C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/st.c">
+			<Option target="FuncionesStack"/>
+		</Unit>
+		<Unit filename="C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/st.h">
+			<Option target="FuncionesStack"/>
+		</Unit>
 		<Unit filename="C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/FuncionesStack/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -4,3 +4,6 @@
 CMakeFiles\FuncionesStack.dir\main.c.obj: ..\main.c
 CMakeFiles\FuncionesStack.dir\main.c.obj: ..\st.h
 
+CMakeFiles\FuncionesStack.dir\st.c.obj: ..\st.c
+CMakeFiles\FuncionesStack.dir\st.c.obj: ..\st.h
+

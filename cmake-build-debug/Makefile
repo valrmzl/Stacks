@@ -142,6 +142,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FuncionesStack.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FuncionesStack.dir\main.c.s
 .PHONY : main.c.s
 
+st.obj: st.c.obj
+.PHONY : st.obj
+
+# target to build an object file
+st.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FuncionesStack.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FuncionesStack.dir\st.c.obj
+.PHONY : st.c.obj
+
+st.i: st.c.i
+.PHONY : st.i
+
+# target to preprocess a source file
+st.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FuncionesStack.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FuncionesStack.dir\st.c.i
+.PHONY : st.c.i
+
+st.s: st.c.s
+.PHONY : st.s
+
+# target to generate assembly for a file
+st.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FuncionesStack.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FuncionesStack.dir\st.c.s
+.PHONY : st.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -154,6 +178,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... st.obj
+	@echo ... st.i
+	@echo ... st.s
 .PHONY : help
 
 

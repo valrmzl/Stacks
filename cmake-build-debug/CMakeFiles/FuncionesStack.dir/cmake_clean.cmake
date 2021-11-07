@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FuncionesStack.dir/main.c.obj"
+  "CMakeFiles/FuncionesStack.dir/st.c.obj"
   "FuncionesStack.exe"
   "FuncionesStack.exe.manifest"
   "FuncionesStack.lib"

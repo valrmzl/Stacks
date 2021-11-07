@@ -3,4 +3,7 @@ project(FuncionesStack C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(FuncionesStack main.c)
+add_executable(FuncionesStack main.c st.c st.h)
+
+
+

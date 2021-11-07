@@ -74,17 +74,38 @@ CMakeFiles\FuncionesStack.dir\main.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\FuncionesStack.dir\main.c.s /c "C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\main.c"
 <<
 
+CMakeFiles\FuncionesStack.dir\st.c.obj: CMakeFiles\FuncionesStack.dir\flags.make
+CMakeFiles\FuncionesStack.dir\st.c.obj: ..\st.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FuncionesStack.dir/st.c.obj"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\FuncionesStack.dir\st.c.obj /FdCMakeFiles\FuncionesStack.dir\ /FS -c "C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\st.c"
+<<
+
+CMakeFiles\FuncionesStack.dir\st.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FuncionesStack.dir/st.c.i"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\FuncionesStack.dir\st.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\st.c"
+<<
+
+CMakeFiles\FuncionesStack.dir\st.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FuncionesStack.dir/st.c.s"
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\FuncionesStack.dir\st.c.s /c "C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\st.c"
+<<
+
 # Object files for target FuncionesStack
 FuncionesStack_OBJECTS = \
-"CMakeFiles\FuncionesStack.dir\main.c.obj"
+"CMakeFiles\FuncionesStack.dir\main.c.obj" \
+"CMakeFiles\FuncionesStack.dir\st.c.obj"
 
 # External object files for target FuncionesStack
 FuncionesStack_EXTERNAL_OBJECTS =
 
 FuncionesStack.exe: CMakeFiles\FuncionesStack.dir\main.c.obj
+FuncionesStack.exe: CMakeFiles\FuncionesStack.dir\st.c.obj
 FuncionesStack.exe: CMakeFiles\FuncionesStack.dir\build.make
 FuncionesStack.exe: CMakeFiles\FuncionesStack.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable FuncionesStack.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable FuncionesStack.exe"
 	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\FuncionesStack.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\FuncionesStack.dir\objects1.rsp @<<
  /out:FuncionesStack.exe /implib:FuncionesStack.lib /pdb:"C:\Users\luax2\Documents\3 sem\Memoria\Parcial 1\FuncionesStack\cmake-build-debug\FuncionesStack.pdb" /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
